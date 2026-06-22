@@ -1,0 +1,32 @@
+/* ../../../styles/styles.css */
+:root{
+    --c1:#096D4B;
+    --c2:#095A6B;
+    --c3:#D3A373;
+    --c4:#FDFDFF;
+    --c5:#2E3142;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/Montserrat-VariableFont_wght.ttf") format("woff2");
+    font-weight: 400;
+    font-style: normal; 
+}
+*{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page_cont{
+  background: linear-gradient(135deg, var(--c5) 0%, var(--c2) 100%);
+}

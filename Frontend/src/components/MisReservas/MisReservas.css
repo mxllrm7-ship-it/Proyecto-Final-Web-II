@@ -1,0 +1,674 @@
+.misreservas-wrap {
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 16px 60px;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, var(--c5) 0%, var(--c2) 100%);
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.misreservas-header {
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.misreservas-header h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--c5);
+  margin-bottom: 16px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.misreservas-tabs {
+  display: flex;
+  gap: 6px;
+  background: #F1F2F6;
+  padding: 5px;
+  border-radius: 12px;
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.misreservas-tab {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border: none;
+  background: transparent;
+  padding: 9px 18px;
+  border-radius: 9px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #6E7080;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+  min-width: max-content;
+  touch-action: manipulation;
+}
+
+.misreservas-tab.is-active {
+  background: white;
+  color: var(--c1);
+  box-shadow: 0 1px 3px rgba(20, 20, 40, 0.1);
+}
+
+.misreservas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.misreservas-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #ECEDF2;
+  box-shadow: 0 1px 3px rgba(20, 20, 40, 0.05);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.misreservas-card-img {
+  height: 110px;
+  background: linear-gradient(135deg, var(--c2), var(--c1));
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.85);
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.misreservas-card-img--icon {
+  background: linear-gradient(135deg, var(--c3), #B98A53);
+}
+
+.misreservas-card-body {
+  padding: 14px 16px 16px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+}
+
+.misreservas-card-body h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--c5);
+  margin-bottom: 6px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.3;
+}
+
+.misreservas-card-sub {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  font-size: 0.8rem;
+  color: #6E7080;
+  margin-bottom: 3px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  flex-wrap: wrap;
+}
+
+.misreservas-card-nota {
+  font-size: 0.78rem;
+  color: #8C8FA0;
+  font-style: italic;
+  margin: 6px 0;
+}
+
+.misreservas-badge {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 11px;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.misreservas-badge--verde {
+  background: rgba(9, 109, 75, 0.12);
+  color: var(--c1);
+}
+
+.misreservas-badge--rojo {
+  background: rgba(192, 57, 43, 0.1);
+  color: #C0392B;
+}
+
+.misreservas-badge--gris {
+  background: #EEEFF3;
+  color: #6E7080;
+}
+
+.misreservas-estado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: white;
+  border-radius: 16px;
+  padding: 50px 20px;
+  text-align: center;
+  color: #9A9DAE;
+  border: 1px solid #ECEDF2;
+}
+
+.misreservas-estado--error {
+  color: #C0392B;
+}
+
+.misreservas-estado-titulo {
+  font-weight: 700;
+  color: var(--c5);
+  font-size: 1rem;
+  margin-top: 4px;
+}
+
+.misreservas-estado-sub {
+  font-size: 0.85rem;
+}
+
+.misreservas-btn-reintentar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 8px;
+  border: 1px solid #E2E3EA;
+  background: white;
+  padding: 10px 16px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.82rem;
+  color: var(--c5);
+  min-height: 44px;
+  touch-action: manipulation;
+  transition: all 0.15s ease;
+}
+
+.misreservas-saldo {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #C0392B;
+  margin-top: 8px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.4;
+}
+
+.misreservas-btn-pagar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 6px;
+  border: none;
+  background: #C0392B;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 9px;
+  font-weight: 700;
+  font-size: 0.78rem;
+  cursor: pointer;
+  min-height: 44px;
+  touch-action: manipulation;
+  transition: all 0.15s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.misreservas-pago-inline {
+  margin-top: 10px;
+  border-top: 1px solid #EEEFF3;
+  padding-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+  .misreservas-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+}
+
+@media (max-width: 992px) {
+  .misreservas-wrap {
+    padding: 28px 14px 50px;
+  }
+
+  .misreservas-header h1 {
+    font-size: 1.4rem;
+    margin-bottom: 14px;
+  }
+
+  .misreservas-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 14px;
+  }
+
+  .misreservas-card-img {
+    height: 100px;
+  }
+
+  .misreservas-card-body {
+    padding: 12px 14px 14px;
+  }
+
+  .misreservas-card-body h3 {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+  }
+
+  .misreservas-card-sub {
+    font-size: 0.75rem;
+    margin-bottom: 2px;
+  }
+
+  .misreservas-badge {
+    font-size: 0.68rem;
+    padding: 3px 9px;
+    margin-top: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .misreservas-wrap {
+    padding: 24px 12px 45px;
+  }
+
+  .misreservas-header h1 {
+    font-size: 1.3rem;
+  }
+
+  .misreservas-tabs {
+    width: 100%;
+  }
+
+  .misreservas-tab {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+  }
+
+  .misreservas-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+  }
+
+  .misreservas-card-img {
+    height: 90px;
+  }
+
+  .misreservas-card-body {
+    padding: 10px 12px 12px;
+  }
+
+  .misreservas-card-body h3 {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+  }
+
+  .misreservas-card-sub {
+    font-size: 0.7rem;
+    margin-bottom: 2px;
+  }
+
+  .misreservas-card-nota {
+    font-size: 0.7rem;
+    margin: 4px 0;
+  }
+
+  .misreservas-badge {
+    font-size: 0.65rem;
+    padding: 2px 8px;
+    margin-top: 5px;
+  }
+
+  .misreservas-saldo {
+    font-size: 0.7rem;
+    margin-top: 6px;
+  }
+
+  .misreservas-btn-pagar {
+    padding: 8px 12px;
+    font-size: 0.7rem;
+    min-height: 40px;
+  }
+
+  .misreservas-btn-reintentar {
+    padding: 8px 12px;
+    font-size: 0.75rem;
+    min-height: 40px;
+  }
+
+  .misreservas-estado {
+    padding: 40px 15px;
+  }
+
+  .misreservas-estado-titulo {
+    font-size: 0.95rem;
+  }
+
+  .misreservas-estado-sub {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .misreservas-wrap {
+    padding: 20px 10px 40px;
+  }
+
+  .misreservas-header h1 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+
+  .misreservas-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .misreservas-card {
+    border-radius: 12px;
+  }
+
+  .misreservas-card-img {
+    height: 80px;
+  }
+
+  .misreservas-card-body {
+    padding: 10px 12px;
+  }
+
+  .misreservas-card-body h3 {
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+  }
+
+  .misreservas-card-sub {
+    font-size: 0.65rem;
+    gap: 3px;
+    margin-bottom: 2px;
+  }
+
+  .misreservas-card-nota {
+    font-size: 0.65rem;
+    margin: 3px 0;
+  }
+
+  .misreservas-badge {
+    font-size: 0.6rem;
+    padding: 2px 7px;
+    margin-top: 5px;
+  }
+
+  .misreservas-saldo {
+    font-size: 0.65rem;
+    margin-top: 5px;
+  }
+
+  .misreservas-btn-pagar {
+    padding: 8px 10px;
+    font-size: 0.65rem;
+    min-height: 40px;
+    margin-top: 5px;
+  }
+
+  .misreservas-btn-reintentar {
+    padding: 8px 10px;
+    font-size: 0.7rem;
+    min-height: 40px;
+  }
+
+  .misreservas-estado {
+    padding: 35px 12px;
+    border-radius: 12px;
+  }
+
+  .misreservas-estado-titulo {
+    font-size: 0.9rem;
+  }
+
+  .misreservas-estado-sub {
+    font-size: 0.75rem;
+  }
+
+  .misreservas-tab {
+    padding: 7px 12px;
+    font-size: 0.75rem;
+    gap: 4px;
+  }
+
+  .misreservas-tab svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .misreservas-pago-inline {
+    margin-top: 8px;
+    padding-top: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .misreservas-wrap {
+    padding: 16px 8px 35px;
+  }
+
+  .misreservas-header h1 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  .misreservas-tabs {
+    padding: 4px;
+    gap: 4px;
+  }
+
+  .misreservas-tab {
+    padding: 6px 10px;
+    font-size: 0.7rem;
+    gap: 4px;
+  }
+
+  .misreservas-grid {
+    gap: 8px;
+  }
+
+  .misreservas-card-img {
+    height: 70px;
+  }
+
+  .misreservas-card-body {
+    padding: 8px 10px;
+  }
+
+  .misreservas-card-body h3 {
+    font-size: 0.8rem;
+    margin-bottom: 3px;
+    line-height: 1.2;
+  }
+
+  .misreservas-card-sub {
+    font-size: 0.6rem;
+    gap: 3px;
+    margin-bottom: 1px;
+  }
+
+  .misreservas-card-nota {
+    font-size: 0.6rem;
+    margin: 2px 0;
+  }
+
+  .misreservas-badge {
+    font-size: 0.55rem;
+    padding: 2px 6px;
+    margin-top: 4px;
+  }
+
+  .misreservas-saldo {
+    font-size: 0.6rem;
+    margin-top: 4px;
+    line-height: 1.3;
+  }
+
+  .misreservas-btn-pagar {
+    padding: 7px 10px;
+    font-size: 0.6rem;
+    min-height: 38px;
+    margin-top: 4px;
+  }
+
+  .misreservas-btn-reintentar {
+    padding: 7px 10px;
+    font-size: 0.65rem;
+    min-height: 38px;
+  }
+
+  .misreservas-estado {
+    padding: 30px 10px;
+  }
+
+  .misreservas-estado-titulo {
+    font-size: 0.85rem;
+  }
+
+  .misreservas-estado-sub {
+    font-size: 0.7rem;
+  }
+
+  .misreservas-estado svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .misreservas-pago-inline {
+    margin-top: 6px;
+    padding-top: 6px;
+  }
+}
+
+@media (max-width: 360px) {
+  .misreservas-wrap {
+    padding: 12px 6px 30px;
+  }
+
+  .misreservas-header h1 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .misreservas-tabs {
+    padding: 3px;
+    gap: 3px;
+  }
+
+  .misreservas-tab {
+    padding: 5px 8px;
+    font-size: 0.65rem;
+    gap: 3px;
+  }
+
+  .misreservas-grid {
+    gap: 6px;
+  }
+
+  .misreservas-card {
+    border-radius: 10px;
+  }
+
+  .misreservas-card-img {
+    height: 60px;
+  }
+
+  .misreservas-card-body {
+    padding: 7px 8px;
+  }
+
+  .misreservas-card-body h3 {
+    font-size: 0.75rem;
+    margin-bottom: 2px;
+    line-height: 1.2;
+  }
+
+  .misreservas-card-sub {
+    font-size: 0.55rem;
+    gap: 2px;
+    margin-bottom: 1px;
+  }
+
+  .misreservas-card-nota {
+    font-size: 0.55rem;
+    margin: 2px 0;
+  }
+
+  .misreservas-badge {
+    font-size: 0.5rem;
+    padding: 1px 5px;
+    margin-top: 3px;
+  }
+
+  .misreservas-saldo {
+    font-size: 0.55rem;
+    margin-top: 3px;
+    line-height: 1.3;
+  }
+
+  .misreservas-btn-pagar {
+    padding: 6px 8px;
+    font-size: 0.55rem;
+    min-height: 36px;
+    margin-top: 3px;
+  }
+
+  .misreservas-btn-reintentar {
+    padding: 6px 8px;
+    font-size: 0.6rem;
+    min-height: 36px;
+  }
+
+  .misreservas-estado {
+    padding: 25px 8px;
+  }
+
+  .misreservas-estado-titulo {
+    font-size: 0.8rem;
+  }
+
+  .misreservas-estado-sub {
+    font-size: 0.65rem;
+  }
+
+  .misreservas-estado svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .misreservas-pago-inline {
+    margin-top: 5px;
+    padding-top: 5px;
+  }
+}

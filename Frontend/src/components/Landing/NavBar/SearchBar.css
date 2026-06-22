@@ -1,0 +1,465 @@
+.search-bar-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.search-toggle-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  color: var(--c5);
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.search-toggle-btn:hover {
+  color: var(--c1);
+}
+
+.toggle-icon {
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.toggle-icon.rotated {
+  transform: rotate(180deg);
+}
+
+.search-bar-container {
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.search-bar {
+  background: var(--c4);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+.search-bar:hover {
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+}
+
+.search-bar-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.city-selector,
+.date-picker-group,
+.search-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.city-selector {
+  flex: 1;
+  min-width: 180px;
+  position: relative;
+}
+
+.date-range-picker {
+  display: flex;
+  gap: 16px;
+}
+
+.date-picker-group {
+  flex: 0 1 140px;
+  position: relative;
+}
+
+.search-input-group {
+  flex: 1;
+  min-width: 140px;
+}
+
+.search-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--c5);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.combobox-wrapper {
+  position: relative;
+}
+
+.combobox-input,
+.date-input,
+.search-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s ease;
+  background-color: #fafafa;
+  color: var(--c5);
+  box-sizing: border-box;
+}
+
+.combobox-input::placeholder,
+.date-input::placeholder,
+.search-input::placeholder {
+  color: #9e9e9e;
+}
+
+.combobox-input:focus,
+.date-input:focus,
+.search-input:focus {
+  outline: none;
+  border-color: var(--c1);
+  background-color: var(--c4);
+  box-shadow: 0 0 0 3px rgba(9, 109, 75, 0.08);
+}
+
+.dropdown-list {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  background: var(--c4);
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  max-height: 240px;
+  overflow-y: auto;
+  z-index: 30;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  animation: slideDown 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-item {
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 14px;
+  color: var(--c5);
+  font-family: 'Montserrat', sans-serif;
+  border-left: 3px solid transparent;
+}
+
+.dropdown-item:hover {
+  background-color: #f5f5f5;
+  border-left-color: var(--c1);
+  padding-left: 16px;
+}
+
+.dropdown-item:active {
+  background-color: rgba(9, 109, 75, 0.08);
+}
+
+.date-input-wrapper {
+  position: relative;
+}
+
+.calendar-popup {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  background: var(--c4);
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 14px;
+  z-index: 40;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  animation: slideDown 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.calendar-popup :global(.rdp) {
+  --rdp-cell-size: 36px;
+  --rdp-accent-color: var(--c1);
+  --rdp-background-color: rgba(9, 109, 75, 0.08);
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.calendar-popup :global(.rdp-months) {
+  width: 280px;
+}
+
+.calendar-popup :global(.rdp-month) {
+  width: 100%;
+}
+
+.calendar-popup :global(.rdp-head_cell) {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--c5);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.calendar-popup :global(.rdp-cell) {
+  padding: 0;
+}
+
+.calendar-popup :global(.rdp-day) {
+  padding: 0;
+  font-size: 13px;
+  color: var(--c5);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.calendar-popup :global(.rdp-day_selected) {
+  background-color: var(--c1);
+  color: var(--c4);
+  font-weight: 600;
+}
+
+.calendar-popup :global(.rdp-day_today) {
+  font-weight: 600;
+  color: var(--c1);
+}
+
+.calendar-popup :global(.rdp-day_disabled) {
+  color: #d0d0d0;
+}
+
+.calendar-popup :global(.rdp-day:hover:not(.rdp-day_disabled)) {
+  background-color: rgba(9, 109, 75, 0.12);
+}
+
+.search-button {
+  padding: 12px 28px;
+  background: linear-gradient(135deg, var(--c1) 0%, rgba(9, 109, 75, 0.9) 100%);
+  color: var(--c4);
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 48px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(9, 109, 75, 0.25);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(9, 109, 75, 0.35);
+}
+
+.search-button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(9, 109, 75, 0.25);
+}
+
+@media (max-width: 1024px) {
+  .search-bar {
+    padding: 20px;
+  }
+
+  .search-bar-row {
+    gap: 12px;
+  }
+
+  .date-picker-group {
+    flex: 0 1 130px;
+  }
+
+  .city-selector {
+    min-width: 160px;
+  }
+
+  .search-input-group {
+    min-width: 120px;
+  }
+
+  .combobox-input,
+  .date-input,
+  .search-input {
+    padding: 11px 13px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-toggle-btn {
+    display: flex;
+  }
+
+  .search-bar {
+    padding: 18px;
+  }
+
+  .search-bar-row {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .city-selector,
+  .date-range-picker,
+  .search-input-group,
+  .search-button {
+    width: 100%;
+  }
+
+  .date-range-picker {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .date-picker-group {
+    flex: none;
+    width: 100%;
+  }
+
+  .city-selector {
+    min-width: unset;
+  }
+
+  .search-input-group {
+    min-width: unset;
+  }
+
+  .search-button {
+    height: 44px;
+    font-size: 12px;
+  }
+
+  .calendar-popup {
+    left: auto;
+    right: 0;
+  }
+
+  .combobox-input,
+  .date-input,
+  .search-input {
+    font-size: 16px;
+    padding: 12px 14px;
+  }
+
+  .dropdown-list {
+    max-height: 200px;
+  }
+
+  .calendar-popup :global(.rdp-months) {
+    width: 270px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-bar-wrapper {
+    gap: 10px;
+  }
+
+  .search-toggle-btn {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .toggle-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .search-bar {
+    padding: 14px;
+    border-radius: 10px;
+  }
+
+  .search-bar-row {
+    gap: 10px;
+  }
+
+  .search-label {
+    font-size: 11px;
+  }
+
+  .combobox-input,
+  .date-input,
+  .search-input {
+    font-size: 16px;
+    padding: 10px 12px;
+    border-radius: 6px;
+  }
+
+  .search-button {
+    height: 42px;
+    padding: 10px 16px;
+    font-size: 11px;
+    border-radius: 6px;
+  }
+
+  .dropdown-list {
+    max-height: 180px;
+  }
+
+  .calendar-popup {
+    padding: 10px;
+  }
+
+  .calendar-popup :global(.rdp-months) {
+    width: 260px;
+  }
+
+  .calendar-popup :global(.rdp-cell-size) {
+    --rdp-cell-size: 32px;
+  }
+}
+
+
+.dropdown-list {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  background: var(--c4);
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  max-height: 240px;
+  overflow-y: auto;
+  z-index: 200; /* 👈 era 30, debe ser mayor que el navbar (100) */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  animation: slideDown 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.calendar-popup {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  background: var(--c4);
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 14px;
+  z-index: 200; /* 👈 era 40, debe ser mayor que el navbar (100) */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  animation: slideDown 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}

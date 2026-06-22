@@ -1,0 +1,85 @@
+.event-list-section {
+  width: 100%;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, var(--c5) 0%, var(--c2) 100%);
+}
+
+.event-list-titulo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #D3A373;
+  margin-bottom: 24px;
+  text-align: left;
+  padding-left: 0;
+}
+
+.event-list-carrusel {
+  width: 100%;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+.carrusel-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 8px 0;
+  scrollbar-width: thin;
+  scrollbar-color: #D3A373 #FDFDFF;
+  background: linear-gradient(135deg, var(--c5) 0%, var(--c2) 100%);
+}
+
+.carrusel-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carrusel-container::-webkit-scrollbar-track {
+  background: #FDFDFF;
+  border-radius: 10px;
+}
+
+.carrusel-container::-webkit-scrollbar-thumb {
+  background: #D3A373;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.carrusel-container::-webkit-scrollbar-thumb:hover {
+  background: #096D4B;
+}
+
+.carrusel-item {
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .event-list-section {
+    padding: 30px 16px;
+  }
+
+  .event-list-titulo {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+
+  .carrusel-container {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-list-section {
+    padding: 24px 12px;
+  }
+
+  .event-list-titulo {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .carrusel-container {
+    gap: 12px;
+  }
+}

@@ -1,0 +1,32 @@
+.events-main {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--c5) 0%, var(--c2) 100%);
+  padding: 20px 0;
+}
+
+.events-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .events-main {
+    padding: 16px 0;
+  }
+
+  .events-container {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .events-main {
+    padding: 12px 0;
+  }
+
+  .events-container {
+    padding: 0 12px;
+  }
+}

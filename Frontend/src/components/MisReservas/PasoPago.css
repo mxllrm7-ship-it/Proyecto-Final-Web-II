@@ -1,0 +1,88 @@
+.pasopago {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.pasopago-tipos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.pasopago-tipo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 14px 10px;
+  border-radius: 12px;
+  border: 1.5px solid #E2E3EA;
+  background: white;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--c5);
+}
+
+.pasopago-tipo span {
+  font-weight: 600;
+  font-size: 0.78rem;
+  color: #6E7080;
+}
+
+.pasopago-tipo.is-active {
+  border-color: var(--c1);
+  background: rgba(9, 109, 75, 0.06);
+  color: var(--c1);
+}
+
+.pasopago-tipo.is-active span {
+  color: var(--c1);
+}
+
+.pasopago-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #6E7080;
+}
+
+.pasopago-select {
+  border: 1px solid #E2E3EA;
+  border-radius: 9px;
+  padding: 9px 11px;
+  font-size: 0.88rem;
+  font-family: inherit;
+}
+
+.pasopago-total {
+  font-size: 0.88rem;
+  color: var(--c5);
+}
+
+.pasopago-saldo {
+  color: #C0392B;
+  font-size: 0.82rem;
+}
+
+.pasopago-error {
+  color: #C0392B;
+  font-size: 0.82rem;
+}
+
+.pasopago-btn-confirmar {
+  background: var(--c1);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.pasopago-btn-confirmar:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

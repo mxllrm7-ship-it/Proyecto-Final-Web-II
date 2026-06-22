@@ -1,0 +1,229 @@
+[
+  {
+    "id": "1",
+    "category": "concerts",
+    "title": "Southern Hospitality Tour: The Black Crowes and Whiskey Myers",
+    "date": "2026-06-07",
+    "time": "6:30 PM",
+    "venue": "Coastal Credit Union Music Park at Walnut Creek",
+    "city": "Raleigh",
+    "state": "NC",
+    "image": "https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=600&q=80",
+    "price": 65,
+    "lineup": ["The Black Crowes", "Whiskey Myers", "Southall"],
+    "seats": [
+      { "section": "Floor GA", "price": 65 },
+      { "section": "Section 100 - Front Row", "price": 150 },
+      { "section": "Section 100", "price": 95 },
+      { "section": "Section 200", "price": 75 },
+      { "section": "Lawn GA", "price": 45 }
+    ],
+    "description": "An unforgettable night of Southern rock featuring The Black Crowes and Whiskey Myers on the Southern Hospitality Tour."
+  },
+  {
+    "id": "2",
+    "category": "concerts",
+    "title": "Indigo Girls",
+    "date": "2026-06-07",
+    "time": "7:00 PM",
+    "venue": "F.M. Kirby Center",
+    "city": "Wilkes-Barre",
+    "state": "PA",
+    "image": "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=600&q=80",
+    "price": 55,
+    "lineup": ["Indigo Girls", "Brian Dunne"],
+    "seats": [
+      { "section": "Orchestra Front", "price": 95 },
+      { "section": "Orchestra", "price": 75 },
+      { "section": "Mezzanine", "price": 55 },
+      { "section": "Balcony", "price": 40 }
+    ],
+    "description": "The legendary folk duo Indigo Girls perform live, joined by opener Brian Dunne."
+  },
+  {
+    "id": "3",
+    "category": "concerts",
+    "title": "Punk Rock Brunch | 90's & Y2K Anthems",
+    "date": "2026-06-07",
+    "time": "10:00 AM",
+    "venue": "The Composers Room",
+    "city": "Las Vegas",
+    "state": "NV",
+    "image": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600&q=80",
+    "price": 35,
+    "lineup": ["Punk Rock Brunch: Hits from the 90's & Y2K"],
+    "seats": [
+      { "section": "General Admission", "price": 35 },
+      { "section": "VIP Table (4 persons)", "price": 120 },
+      { "section": "Bar Seating", "price": 35 }
+    ],
+    "description": "Start your Sunday with punk rock classics from the 90s and Y2K era over brunch."
+  },
+  {
+    "id": "4",
+    "category": "theater",
+    "title": "Summer Tour Screening + Mason's Children Performance",
+    "date": "2026-06-07",
+    "time": "5:00 PM",
+    "venue": "Garcia's at The Capitol Theatre",
+    "city": "Port Chester",
+    "state": "NY",
+    "image": "https://images.unsplash.com/photo-1507924538820-ede94a04019d?w=600&q=80",
+    "price": 40,
+    "lineup": ["Mason's Children"],
+    "seats": [
+      { "section": "Orchestra", "price": 60 },
+      { "section": "Mezzanine", "price": 40 },
+      { "section": "Standing Room", "price": 25 }
+    ],
+    "description": "A special evening featuring a film screening of Summer Tour followed by a live performance by Mason's Children."
+  },
+  {
+    "id": "5",
+    "category": "theater",
+    "title": "Celebration of Kathleen Rivera w/ Moonhound, Amor Prohibido, Eleanor",
+    "date": "2026-06-07",
+    "time": "5:00 PM",
+    "venue": "Mercury Lounge",
+    "city": "New York",
+    "state": "NY",
+    "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&q=80",
+    "price": 20,
+    "lineup": ["Moon Hound", "Amor Prohibido", "Eleanor"],
+    "seats": [
+      { "section": "General Admission", "price": 20 },
+      { "section": "VIP Front", "price": 45 }
+    ],
+    "description": "A heartfelt celebration featuring three incredible acts at the iconic Mercury Lounge."
+  },
+  {
+    "id": "6",
+    "category": "theater",
+    "title": "BERTHA: Grateful Drag",
+    "date": "2026-06-07",
+    "time": "6:00 PM",
+    "venue": "The Stone Pony",
+    "city": "Asbury Park",
+    "state": "NJ",
+    "image": "https://images.unsplash.com/photo-1603190287605-e6ade32fa852?w=600&q=80",
+    "price": 30,
+    "lineup": ["BERTHA: Grateful Drag"],
+    "seats": [
+      { "section": "General Admission", "price": 30 },
+      { "section": "VIP Lounge", "price": 75 }
+    ],
+    "description": "Where the Grateful Dead meets drag culture — BERTHA brings an unforgettable show to The Stone Pony."
+  },
+  {
+    "id": "7",
+    "category": "sports",
+    "title": "Rod Stewart: Encore Shows",
+    "date": "2025-10-07",
+    "time": "7:30 PM",
+    "venue": "The Colosseum at Caesars Palace",
+    "city": "Las Vegas",
+    "state": "NV",
+    "image": "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=600&q=80",
+    "price": 120,
+    "lineup": ["Rod Stewart"],
+    "seats": [
+      { "section": "Floor Center", "price": 250 },
+      { "section": "Floor Side", "price": 180 },
+      { "section": "Lower Bowl", "price": 150 },
+      { "section": "Upper Bowl", "price": 120 },
+      { "section": "VIP Package", "price": 400 }
+    ],
+    "description": "Rod Stewart returns for encore shows at the iconic Colosseum at Caesars Palace."
+  },
+  {
+    "id": "8",
+    "category": "sports",
+    "title": "Covet",
+    "date": "2026-06-07",
+    "time": "6:30 PM",
+    "venue": "The Atlantis",
+    "city": "Washington",
+    "state": "DC",
+    "image": "https://images.unsplash.com/photo-1598387993441-a364f854c3e1?w=600&q=80",
+    "price": 25,
+    "lineup": ["Covet", "Lite", "Hikes"],
+    "seats": [
+      { "section": "General Admission", "price": 25 },
+      { "section": "VIP Early Entry", "price": 50 }
+    ],
+    "description": "Math-rock trio Covet headlines The Atlantis with support from Lite and Hikes."
+  },
+  {
+    "id": "9",
+    "category": "specials",
+    "title": "Beatles Brunch on the Patio ft. Phil Angotti & Friends",
+    "date": "2026-06-07",
+    "time": "12:00 PM",
+    "venue": "FITZGERALDS NIGHTCLUB",
+    "city": "Berwyn",
+    "state": "IL",
+    "image": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&q=80",
+    "price": 15,
+    "lineup": ["Phil Angotti & Friends"],
+    "seats": [
+      { "section": "Patio General", "price": 15 },
+      { "section": "Reserved Patio Table", "price": 40 },
+      { "section": "Indoor Seating", "price": 20 }
+    ],
+    "description": "Enjoy brunch on the patio while Phil Angotti & Friends perform the music of The Beatles live."
+  },
+  {
+    "id": "10",
+    "category": "specials",
+    "title": "Chest Fever: Music of Bob Dylan & The Band",
+    "date": "2026-06-07",
+    "time": "7:00 PM",
+    "venue": "The Mercury Music Lounge",
+    "city": "Lakewood",
+    "state": "OH",
+    "image": "https://images.unsplash.com/photo-1468164016595-6108e4c60c8b?w=600&q=80",
+    "price": 18,
+    "lineup": ["Chest Fever"],
+    "seats": [
+      { "section": "General Admission", "price": 18 },
+      { "section": "Reserved Seating", "price": 30 }
+    ],
+    "description": "Chest Fever presents How Does it Feel?! — a tribute to the music of Bob Dylan & The Band."
+  },
+  {
+    "id": "11",
+    "category": "cities",
+    "title": "School of Rock Seattle: Rock N' Grohl, The Who & Keys Legends",
+    "date": "2026-06-07",
+    "time": "9:45 AM",
+    "venue": "The Crocodile",
+    "city": "Seattle",
+    "state": "WA",
+    "image": "https://images.unsplash.com/photo-1471478331149-c72f17e33c73?w=600&q=80",
+    "price": 22,
+    "lineup": ["School of Rock"],
+    "seats": [
+      { "section": "General Admission", "price": 22 },
+      { "section": "Reserved", "price": 35 }
+    ],
+    "description": "School of Rock Seattle brings Rock N' Grohl, The Who and Keys Legends tributes to The Crocodile."
+  },
+  {
+    "id": "12",
+    "category": "cities",
+    "title": "Rebelmatic | Incendiary Device | Silence Equals Death",
+    "date": "2026-06-07",
+    "time": "2:00 PM",
+    "venue": "Bowery Palace",
+    "city": "New York",
+    "state": "NY",
+    "image": "https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=600&q=80",
+    "price": 20,
+    "lineup": ["Rebelmatic", "Incendiary Device", "Silence Equals Death", "Chemical-X", "Crossed Keys"],
+    "seats": [
+      { "section": "General Admission", "price": 20 },
+      { "section": "VIP Bar Area", "price": 45 }
+    ],
+    "description": "A powerhouse punk bill at Bowery Palace featuring Rebelmatic, Incendiary Device and more."
+  }
+]
